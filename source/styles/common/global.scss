@@ -1,1 +1,42 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+@use "../common/variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Geologica-SemiBold", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  color: #ffffff;
+  height: 100%;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 42px;
+    line-height: 52.5px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 100%;
+  position: relative;
+}

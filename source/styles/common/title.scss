@@ -1,0 +1,16 @@
+@use "../common/variables.scss";
+
+.title {
+  margin: 0;
+  font-family: "Geologica-Black", sans-serif;
+  font-size: 33px;
+  font-weight: 900;
+  line-height: 29.28px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 140px;
+    line-height: 137.37px;
+  }
+}
